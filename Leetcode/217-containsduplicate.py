@@ -2,7 +2,7 @@
 
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums: list[int]) -> bool:
         numset = set()
         for num in nums:
             if num in numset:
@@ -15,7 +15,7 @@ from collections import defaultdict
 
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums: list[int]) -> bool:
         numdict = defaultdict(int)
         for num in nums:
             numdict[num] += 1
