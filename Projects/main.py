@@ -13,15 +13,15 @@ response = requests.get(url)
 
 if response.status_code == 200:
     data = response.json()
-
-    print("\nWeather Report")
-    print("----------------")
-    print(f"City: {data['name']}")
-    print(f"Temperature: {data['main']['temp']}°F")
-    print(f"Feels Like: {data['main']['feels_like']}°F")
-    print(f"Humidity: {data['main']['humidity']}%")
-    print(f"Condition: {data['weather'][0]['description']}")
-    print(f"Wind Speed: {data['wind']['speed']} mph")
+    print(data)
+    # print("\nWeather Report")
+    # print("----------------")
+    # print(f"City: {data['name']}")
+    # print(f"Temperature: {data['main']['temp']}°F")
+    # print(f"Feels Like: {data['main']['feels_like']}°F")
+    # print(f"Humidity: {data['main']['humidity']}%")
+    # print(f"Condition: {data['weather'][0]['description']}")
+    # print(f"Wind Speed: {data['wind']['speed']} mph")
 
 else:
     print("Error:", response.status_code)
